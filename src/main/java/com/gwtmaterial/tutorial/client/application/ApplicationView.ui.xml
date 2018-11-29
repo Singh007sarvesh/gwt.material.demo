@@ -23,12 +23,21 @@
 
     <ui:with field="res" type="com.gwtmaterial.tutorial.client.resources.AppResources"/>
     <ui:style>
-        .sidebar{
+        sidebar{
             border: 1px solid gray !important;
             background-color: #2196f3 !important;
         }
-        m.footer{
-            background-color: green !important;
+        footer{
+            background-color: white !important;
+        }
+        row{
+            height: 300px !important;
+        }
+        header{
+                height: 40px !important;
+        }
+        header.header1{
+            height: 20px !important;
         }
     </ui:style>
     <m:MaterialPanel>
@@ -41,36 +50,30 @@
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialHeader>
-        <m:MaterialHeader ui:field="header1">
-            <m:MaterialNavBar ui:field="navBar" activates="sidenav" backgroundColor="GREY">
+        <m:MaterialHeader ui:field="header1" class="header1" backgroundColor="BLUE">
+            <m:MaterialNavBar ui:field="navBar" activates="sidenav" backgroundColor="GREY_LIGHTEN_5"  >
                 <m:MaterialNavSection>
                     <m:MaterialNavBrand float="RIGHT">
-                        <m:MaterialLink text="File" />
-                        <m:MaterialLink text="Edit" />
-                        <m:MaterialLink text="Build" />
-                        <m:MaterialLink text="Help" />
-                        <m:MaterialLink iconType="PLAY_ARROW" iconColor="GREEN" marginLeft="600"/>
-                        <m:MaterialLink iconType="STOP" iconColor="RED" marginLeft="-35"/>
+                        <m:MaterialLink text="File" textColor="BLACK"/>
+                        <m:MaterialLink text="Edit" textColor="BLACK"/>
+                        <m:MaterialLink text="Build" textColor="BLACK"/>
+                        <m:MaterialLink text="Help" textColor="BLACK"/>
+                        <m:MaterialLink iconType="PLAY_ARROW" iconColor="GREEN"/>
+                        <m:MaterialLink iconType="STOP" iconColor="RED" marginLeft="0"/>
                     </m:MaterialNavBrand>
-
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialHeader>
-
-        <m:MaterialButton text="Project" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE"/>
+        <m:MaterialButton text="Project" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE" style="margin-top:10px;"/>
         <m:MaterialButton text="User Guide" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE" float="RIGHT"/>
         <m:MaterialButton text="Agenda" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE" float="RIGHT"/>
         <m:MaterialButton text="Rete" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE" float="RIGHT"/>
-        <m:MaterialRow>
-            <m:MaterialTitle grid="m2" backgroundColor="GREEN">
-                <m:MaterialLabel text="hello">
-
-                </m:MaterialLabel>
-            </m:MaterialTitle>
-            <m:MaterialTitle grid="m7" backgroundColor="RED"></m:MaterialTitle>
-            <m:MaterialTitle grid="m3" backgroundColor="BLUE"></m:MaterialTitle>
+        <m:MaterialRow ui:field="row">
+            <m:MaterialTitle grid="m2" style="height:400px;border:1px solid;border-color:#92c1f0;"></m:MaterialTitle >
+            <m:MaterialTitle  grid="m7" style="height:400px;border:1px solid;border-color:#92c1f0;"></m:MaterialTitle>
+            <m:MaterialTitle grid="m3"  style="height:500px;border:1px solid; border-color:#92c1f0;"></m:MaterialTitle>
         </m:MaterialRow>
-        <m:MaterialRow>
+        <m:MaterialRow >
             <m:MaterialTitle grid="m9" backgroundColor="RED">
                 <m:MaterialButton text="Console"></m:MaterialButton>
                 <m:MaterialButton text="WM Contents"></m:MaterialButton>
@@ -78,18 +81,18 @@
             </m:MaterialTitle>
         </m:MaterialRow>
         <m:MaterialRow>
-            <m:MaterialTitle grid="m9" backgroundColor="BROWN">
+            <m:MaterialTitle grid="m9" style="height:30px;border:1px solid;border-color:#92c1f0;hr;">
                 <m:MaterialImage float="RIGHT" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABfklEQVR42q2TS0sCURiG/TktK+0iWUSb6G+0qlVaoQsHJNOyoEILVy0KEgqCYDbhomXUD7BNi7KL6Yyj4yWdc2aEr3O+MbM45saBh1nMeZ/3nYFxOAZ5ybvD8B99BVexEaBmqwOhLTCIBQ1GRl7uL7ncHu0KtqDZpt604PFGgod+kvMtJ1BqgcEYWkxCw7CQGhNk7w9QkpGX4CLqFEvONl0/YRbizfHUHazG01Cum1CqUSQVcYkF10ez2MgFPFxtWFD55EFG1YRilSIn4TGx4PZ0AcM1DFqgs/D3gnl/ChSdIMehcbFATsxhmEv0ut2ssUa1QqFQppAvEyQpTYgFieAkNnOBhpN/L8iVKHIYdIsF+wE3fiwuUFmzwprzOoWPEoF3jcBr0WYv0EMQ80/ZzSzIJXk2u3vBi0qQHXZOKIiueVir2XnfnEY7zTyYVWwi6x6xYMPnAbU9mYff2uGsasCzYsBTwSbs6yEIeadBWpkByWsT/HPHZwx+bmB/8BeittcSJQTm9AAAAABJRU5ErkJggg=="></m:MaterialImage>
                 <m:MaterialImage float="RIGHT" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB4UlEQVR42qWT3UobQRiGvQdPBSn1IryA9shLEDyoJxJsKRZF/AmKNir+og1EI1ZKyMZ/hZJWqVClskpDUz1Ri6gBjVGIRmPMZndmX2e+2NW1TQu68CzvN9/sw+zsbF4oFMJjyJM3ZbjiQVgC35AD4bjxT+QD92tLMOqppMGDuJYTd181zSl59QEL6h7VlsDrfk3N6KmWk7rmtzTn4ooJDDhb228FEtmMJTI5qajp/wNLMP8pgM2jM5wL+11OznWLypoW+GZX4ZtTCVnbVrAW7MDSSDGxvuTFZZoR8aRO9Hn9iBynBRr2BbbPuDz+BqrvOZLxCCHzxtd3SGU4kUgZ6PT4sRdLE7uxe4JgfxF2wpP4fW3//EJjh/thpHWOpFhJ64Cf9unoVCcswcpsIxRnAb2CzBKZ5ZjMGYPjKsNQ362gvktBg6DHOwOXezIr+Nj7FCzSC578ge1vbbiMBkX+DhZ9D9kzOCdJVZtiO0hVLiUrmOt8An6hgieW4e8oxufBZ+Bni0IwCupxE4yZcDQFbAfJ0XQjmHYVCsEaDtfdqC3NJ2Rm0RFQzzSJFw1ZgSb2RNNNlIuaBBMthUhs9oAdDGFr8SUhc+pXO2RvamEDnjEVzoF5lNUGbNg28W/I3v9+52smZD4ub2cGbAAAAABJRU5ErkJggg=="></m:MaterialImage>
             </m:MaterialTitle>
         </m:MaterialRow>
-        <m:MaterialRow border="2 solid">
-            <m:MaterialTitle grid="m9" backgroundColor="RED"></m:MaterialTitle>
+        <m:MaterialRow marginTop="-20">
+            <m:MaterialTitle grid="m9" style="height:150px;border:1px solid;border-color:#92c1f0;"></m:MaterialTitle>
         </m:MaterialRow>
-        <m:MaterialFooter ui:field="footer" marginTop="470">
-            <m:MaterialLabel text="iRules" textColor="WHITE" float="LEFT" marginLeft="-25"/>
+        <m:MaterialFooter ui:field="footer" marginTop="-20">
+            <m:MaterialLabel text="iRules" textColor="BLACK" float="LEFT" marginLeft="-25"/>
 
-                <m:MaterialLabel text="© 2015 Copyright GWT Material - Sarvesh" textColor="WHITE" marginLeft="50" textAlign="CENTER"/>
+                <m:MaterialLabel text="© 2015 Copyright GWT Material - Sarvesh" textColor="BLACK" marginLeft="50" textAlign="CENTER"/>
 
         </m:MaterialFooter>
     </m:MaterialPanel >

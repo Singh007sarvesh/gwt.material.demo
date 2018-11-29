@@ -42,6 +42,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     @UiField
     MaterialFooter footer;
 
+    @UiField
+    MaterialRow row;
 
     @Inject
     ApplicationView(Binder uiBinder) {
