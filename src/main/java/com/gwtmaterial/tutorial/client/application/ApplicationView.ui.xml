@@ -1,0 +1,56 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2017 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+        xmlns:g='urn:import:com.google.gwt.user.client.ui'
+        xmlns:m="urn:import:gwt.material.design.client.ui">
+
+    <ui:with field="res" type="com.gwtmaterial.tutorial.client.resources.AppResources"/>
+
+    <m:MaterialPanel>
+        <m:MaterialHeader ui:field="header" >
+       <m:MaterialNavBar ui:field="navBar1" activates="sidenav" backgroundColor="BLUE">
+                <m:MaterialNavSection >
+                    <m:MaterialImage marginLeft="20" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAYCAYAAAC7v6DJAAADpUlEQVR42u1YS2xNURR97VP1+vFpNW1CNEjRqGAiQlvq01Ri1OhAiVYkwoyBDhD/ComENNEBZvUZSsQvgqjfQCTMtKiRkKCpXyUS713rsI4c+51z331P0w7cneyc795n33X32XvfG4kEIM/zqiMhZUYAzwtRyAy4hd5vagnRSJMSicRzhRzagRCN9LxulPc3xUJUAlI8Hj9Or7vP9l6IShqJQicLsx9SauBWEK9WjpdyvD5EJ3WieAWOS0/E3PcQHX+vy6GXLed4AtvpnC8IqCcKzh8Ge/PBubo/0omiCx72hf0L9Lh+euS3oFdX7ZPem2J/DFyTSWyGnWfQjB7xqoAGzCZY72WyQLdZ1X8KUHA3xtMceqrAe9I4tyKTpETwTtPT96oSa6SAawQgr41xIcbP0M6iccoL+8DX0f2ogcW4N4DuLLbjwKtUGxQ8TJeA68FTXeD5nJsLngsud9nE/hzwFJftXK/0SxRvsaGUArsxvgq+yLW4AlAonWwAeEustWIuwf4RlWzAb8yqW4UFrm83580vGvS/esmUZfG8pGsL2ZcW2ZlGmPAIinl2wtQB3fstOjZKdNXhjwWYvZjbDN7k82brDKVFxvw6HfNgQLsEGHOdlMnlm60w6sqoCBtFep4vYdAHvDGUvc1xlfYezD01zogZYOXrryrGdU+EsUZjvCPphkDopsykfHMFaC+lKG1+8JA2P/BA2Zb4Ws3+DGG0zvrNQqaY85V+4JmebbnmHYbnbbBcc0XzdajC/hPiCpdIAG5YQOnTn2opwPvEQw77gedITjUO8JbRM+6CH2jG1B2e1e4Cj+WLogUWW/t5o2I+MVbRLtp+Snso4/82uXmtOtxy0AuFMtrLQT7lQFuGELyVBOagkhd8SP8mc4BX4APeBz5XKvD2iZq1HnKPNJBmbdfh+iWFtQN8kKjjIDPYZw8heIVcrxUyY6H3Gtp5Aa7tWZ+6UF/bNY6/SbXgRdh7Tqzn/bETbZmKLy7wVDxjf0BlV6GoxcicR8VaRuCBxutsamTaPMOmdzKgOxJGt1mzcu6hJWHEhf7Pxp5J1NFknLfaBG+Jw6OadCxD+0THQI57RMnRaZFv1Ydg/ZgPeHUiQchSZdBSSpQL8LokeJTtschWi1KlzVKKlBq38rxc/HVTzXopjSK3DMInYccV9He6vPYfCvViaRdrsa3gxRnomwhuUFfQ8jnoEfQoi/Aan0/HBv2ikyrs//AHiAYvJxLS8IL3E3OAO6MoX5/hAAAAAElFTkSuQmCC"/>
+                    <m:MaterialLink text="Sarvesh Singh" marginLeft="1100"/>
+                </m:MaterialNavSection>
+       </m:MaterialNavBar>
+        </m:MaterialHeader>
+        <m:MaterialHeader ui:field="header1" >
+            <m:MaterialNavBar ui:field="navBar" activates="sidenav" backgroundColor="GREY">
+                <m:MaterialNavSection >
+                    <m:MaterialLink text="File" />
+                    <m:MaterialLink text="Edit" />
+                    <m:MaterialLink text="Build" />
+                    <m:MaterialLink text="Help" />
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+        </m:MaterialHeader>
+
+        <m:MaterialContainer ui:field="container">
+
+        </m:MaterialContainer>
+        <m:MaterialFooter ui:field="footer" marginTop="470" backgroundColor="BLACK">
+            <m:MaterialLabel text="iRules" textColor="WHITE" float="LEFT" marginLeft="-30"/>
+
+                <m:MaterialLabel text="© 2015 Copyright GWT Material - Sarvesh" textColor="WHITE" marginLeft="50" textAlign="CENTER"/>
+
+        </m:MaterialFooter>
+    </m:MaterialPanel >
+</ui:UiBinder>
