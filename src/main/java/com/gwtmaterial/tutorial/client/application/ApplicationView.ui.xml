@@ -22,39 +22,71 @@
         xmlns:m="urn:import:gwt.material.design.client.ui">
 
     <ui:with field="res" type="com.gwtmaterial.tutorial.client.resources.AppResources"/>
-
+    <ui:style>
+        .sidebar{
+            border: 1px solid gray !important;
+            background-color: #2196f3 !important;
+        }
+        .footer{
+            background-color: green !important;
+        }
+    </ui:style>
     <m:MaterialPanel>
         <m:MaterialHeader ui:field="header" >
-       <m:MaterialNavBar ui:field="navBar1" activates="sidenav1" backgroundColor="BLUE">
+            <m:MaterialNavBar ui:field="navBar1" activates="sidenav1">
                 <m:MaterialNavSection >
                     <m:MaterialImage marginLeft="20" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAYCAYAAAC7v6DJAAADpUlEQVR42u1YS2xNURR97VP1+vFpNW1CNEjRqGAiQlvq01Ri1OhAiVYkwoyBDhD/ComENNEBZvUZSsQvgqjfQCTMtKiRkKCpXyUS713rsI4c+51z331P0w7cneyc795n33X32XvfG4kEIM/zqiMhZUYAzwtRyAy4hd5vagnRSJMSicRzhRzagRCN9LxulPc3xUJUAlI8Hj9Or7vP9l6IShqJQicLsx9SauBWEK9WjpdyvD5EJ3WieAWOS0/E3PcQHX+vy6GXLed4AtvpnC8IqCcKzh8Ge/PBubo/0omiCx72hf0L9Lh+euS3oFdX7ZPem2J/DFyTSWyGnWfQjB7xqoAGzCZY72WyQLdZ1X8KUHA3xtMceqrAe9I4tyKTpETwTtPT96oSa6SAawQgr41xIcbP0M6iccoL+8DX0f2ogcW4N4DuLLbjwKtUGxQ8TJeA68FTXeD5nJsLngsud9nE/hzwFJftXK/0SxRvsaGUArsxvgq+yLW4AlAonWwAeEustWIuwf4RlWzAb8yqW4UFrm83580vGvS/esmUZfG8pGsL2ZcW2ZlGmPAIinl2wtQB3fstOjZKdNXhjwWYvZjbDN7k82brDKVFxvw6HfNgQLsEGHOdlMnlm60w6sqoCBtFep4vYdAHvDGUvc1xlfYezD01zogZYOXrryrGdU+EsUZjvCPphkDopsykfHMFaC+lKG1+8JA2P/BA2Zb4Ws3+DGG0zvrNQqaY85V+4JmebbnmHYbnbbBcc0XzdajC/hPiCpdIAG5YQOnTn2opwPvEQw77gedITjUO8JbRM+6CH2jG1B2e1e4Cj+WLogUWW/t5o2I+MVbRLtp+Snso4/82uXmtOtxy0AuFMtrLQT7lQFuGELyVBOagkhd8SP8mc4BX4APeBz5XKvD2iZq1HnKPNJBmbdfh+iWFtQN8kKjjIDPYZw8heIVcrxUyY6H3Gtp5Aa7tWZ+6UF/bNY6/SbXgRdh7Tqzn/bETbZmKLy7wVDxjf0BlV6GoxcicR8VaRuCBxutsamTaPMOmdzKgOxJGt1mzcu6hJWHEhf7Pxp5J1NFknLfaBG+Jw6OadCxD+0THQI57RMnRaZFv1Ydg/ZgPeHUiQchSZdBSSpQL8LokeJTtschWi1KlzVKKlBq38rxc/HVTzXopjSK3DMInYccV9He6vPYfCvViaRdrsa3gxRnomwhuUFfQ8jnoEfQoi/Aan0/HBv2ikyrs//AHiAYvJxLS8IL3E3OAO6MoX5/hAAAAAElFTkSuQmCC"/>
                     <m:MaterialLink text="Sarvesh Singh" marginLeft="1100" />
                     <!--<m:MaterialLink iconType="ARROW_DROP_DOWN" iconColor="WHITE" marginLeft="-40"/>-->
-
-                </m:MaterialNavSection>
-       </m:MaterialNavBar>
-        </m:MaterialHeader>
-        <m:MaterialHeader ui:field="header1" height="10">
-            <m:MaterialNavBar ui:field="navBar" activates="sidenav" backgroundColor="GREY" height="10">
-                <m:MaterialNavSection height="10">
-                    <m:MaterialLink text="File" />
-                    <m:MaterialLink text="Edit" />
-                    <m:MaterialLink text="Build" />
-                    <m:MaterialLink text="Help" />
-                    <m:MaterialLink iconType="PLAY_ARROW" iconColor="GREEN" marginLeft="600"/>
-                    <m:MaterialLink iconType="STOP" iconColor="RED" marginLeft="-35"/>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialHeader>
-        <m:MaterialLabel lineHeight="3">
+        <m:MaterialHeader ui:field="header1">
+            <m:MaterialNavBar ui:field="navBar" activates="sidenav" backgroundColor="GREY">
+                <m:MaterialNavSection>
+                    <m:MaterialNavBrand float="RIGHT">
+                        <m:MaterialLink text="File" />
+                        <m:MaterialLink text="Edit" />
+                        <m:MaterialLink text="Build" />
+                        <m:MaterialLink text="Help" />
+                        <m:MaterialLink iconType="PLAY_ARROW" iconColor="GREEN" marginLeft="600"/>
+                        <m:MaterialLink iconType="STOP" iconColor="RED" marginLeft="-35"/>
+                    </m:MaterialNavBrand>
 
-        </m:MaterialLabel>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+        </m:MaterialHeader>
+
         <m:MaterialButton text="Project" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE"/>
-        <m:MaterialButton text="Rete" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE"/>
-        <m:MaterialButton text="Ajenda" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE"/>
-        <m:MaterialButton text="User Guide" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE"/>
+        <m:MaterialButton text="User Guide" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE" float="RIGHT"/>
+        <m:MaterialButton text="Agenda" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE" float="RIGHT"/>
+        <m:MaterialButton text="Rete" waves="DEFAULT" backgroundColor="WHITE" textColor="BLUE" float="RIGHT"/>
+        <m:MaterialRow>
+            <m:MaterialTitle grid="m2" backgroundColor="GREEN">
+                <m:MaterialLabel text="hello">
 
-        <m:MaterialFooter ui:field="footer" marginTop="470" backgroundColor="BLACK">
+                </m:MaterialLabel>
+            </m:MaterialTitle>
+            <m:MaterialTitle grid="m7" backgroundColor="RED"></m:MaterialTitle>
+            <m:MaterialTitle grid="m3" backgroundColor="BLUE"></m:MaterialTitle>
+        </m:MaterialRow>
+        <m:MaterialRow>
+            <m:MaterialTitle grid="m9" backgroundColor="RED">
+                <m:MaterialButton text="Console"></m:MaterialButton>
+                <m:MaterialButton text="WM Contents"></m:MaterialButton>
+                <m:MaterialButton text="Search Facts"></m:MaterialButton>
+            </m:MaterialTitle>
+        </m:MaterialRow>
+        <m:MaterialRow>
+            <m:MaterialTitle grid="m9" backgroundColor="BROWN">
+                <m:MaterialImage float="RIGHT" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABfklEQVR42q2TS0sCURiG/TktK+0iWUSb6G+0qlVaoQsHJNOyoEILVy0KEgqCYDbhomXUD7BNi7KL6Yyj4yWdc2aEr3O+MbM45saBh1nMeZ/3nYFxOAZ5ybvD8B99BVexEaBmqwOhLTCIBQ1GRl7uL7ncHu0KtqDZpt604PFGgod+kvMtJ1BqgcEYWkxCw7CQGhNk7w9QkpGX4CLqFEvONl0/YRbizfHUHazG01Cum1CqUSQVcYkF10ez2MgFPFxtWFD55EFG1YRilSIn4TGx4PZ0AcM1DFqgs/D3gnl/ChSdIMehcbFATsxhmEv0ut2ssUa1QqFQppAvEyQpTYgFieAkNnOBhpN/L8iVKHIYdIsF+wE3fiwuUFmzwprzOoWPEoF3jcBr0WYv0EMQ80/ZzSzIJXk2u3vBi0qQHXZOKIiueVir2XnfnEY7zTyYVWwi6x6xYMPnAbU9mYff2uGsasCzYsBTwSbs6yEIeadBWpkByWsT/HPHZwx+bmB/8BeittcSJQTm9AAAAABJRU5ErkJggg=="></m:MaterialImage>
+                <m:MaterialImage float="RIGHT" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB4UlEQVR42qWT3UobQRiGvQdPBSn1IryA9shLEDyoJxJsKRZF/AmKNir+og1EI1ZKyMZ/hZJWqVClskpDUz1Ri6gBjVGIRmPMZndmX2e+2NW1TQu68CzvN9/sw+zsbF4oFMJjyJM3ZbjiQVgC35AD4bjxT+QD92tLMOqppMGDuJYTd181zSl59QEL6h7VlsDrfk3N6KmWk7rmtzTn4ooJDDhb228FEtmMJTI5qajp/wNLMP8pgM2jM5wL+11OznWLypoW+GZX4ZtTCVnbVrAW7MDSSDGxvuTFZZoR8aRO9Hn9iBynBRr2BbbPuDz+BqrvOZLxCCHzxtd3SGU4kUgZ6PT4sRdLE7uxe4JgfxF2wpP4fW3//EJjh/thpHWOpFhJ64Cf9unoVCcswcpsIxRnAb2CzBKZ5ZjMGYPjKsNQ362gvktBg6DHOwOXezIr+Nj7FCzSC578ge1vbbiMBkX+DhZ9D9kzOCdJVZtiO0hVLiUrmOt8An6hgieW4e8oxufBZ+Bni0IwCupxE4yZcDQFbAfJ0XQjmHYVCsEaDtfdqC3NJ2Rm0RFQzzSJFw1ZgSb2RNNNlIuaBBMthUhs9oAdDGFr8SUhc+pXO2RvamEDnjEVzoF5lNUGbNg28W/I3v9+52smZD4ub2cGbAAAAABJRU5ErkJggg=="></m:MaterialImage>
+            </m:MaterialTitle>
+        </m:MaterialRow>
+        <m:MaterialRow>
+            <m:MaterialTitle grid="m9" backgroundColor="RED"></m:MaterialTitle>
+        </m:MaterialRow>
+        <m:MaterialFooter ui:field="footer" marginTop="470">
             <m:MaterialLabel text="iRules" textColor="WHITE" float="LEFT" marginLeft="-25"/>
 
                 <m:MaterialLabel text="© 2015 Copyright GWT Material - Sarvesh" textColor="WHITE" marginLeft="50" textAlign="CENTER"/>

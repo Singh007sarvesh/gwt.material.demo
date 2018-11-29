@@ -37,7 +37,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     @UiField
     MaterialHeader header;
-
+    @UiField
+    MaterialHeader header1;
     @UiField
     MaterialFooter footer;
 
