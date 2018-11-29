@@ -33,14 +33,14 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
-    @UiField
-    MaterialContainer container;
+
 
     @UiField
     MaterialHeader header;
 
     @UiField
     MaterialFooter footer;
+
 
     @Inject
     ApplicationView(Binder uiBinder) {
