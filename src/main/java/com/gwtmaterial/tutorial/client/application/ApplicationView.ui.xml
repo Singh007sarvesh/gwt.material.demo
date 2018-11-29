@@ -47,7 +47,7 @@
 
         </m:MaterialContainer>
         <m:MaterialFooter ui:field="footer" marginTop="470" backgroundColor="BLACK">
-            <m:MaterialLabel text="iRules" textColor="WHITE" float="LEFT" marginLeft="-30"/>
+            <m:MaterialLabel text="iRules" textColor="WHITE" float="LEFT" marginLeft="-25"/>
 
                 <m:MaterialLabel text="© 2015 Copyright GWT Material - Sarvesh" textColor="WHITE" marginLeft="50" textAlign="CENTER"/>
 
