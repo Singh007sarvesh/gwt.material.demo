@@ -27,7 +27,7 @@
             border: 1px solid gray !important;
             background-color: #2196f3 !important;
         }
-        .footer{
+        m.footer{
             background-color: green !important;
         }
     </ui:style>
@@ -83,7 +83,7 @@
                 <m:MaterialImage float="RIGHT" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB4UlEQVR42qWT3UobQRiGvQdPBSn1IryA9shLEDyoJxJsKRZF/AmKNir+og1EI1ZKyMZ/hZJWqVClskpDUz1Ri6gBjVGIRmPMZndmX2e+2NW1TQu68CzvN9/sw+zsbF4oFMJjyJM3ZbjiQVgC35AD4bjxT+QD92tLMOqppMGDuJYTd181zSl59QEL6h7VlsDrfk3N6KmWk7rmtzTn4ooJDDhb228FEtmMJTI5qajp/wNLMP8pgM2jM5wL+11OznWLypoW+GZX4ZtTCVnbVrAW7MDSSDGxvuTFZZoR8aRO9Hn9iBynBRr2BbbPuDz+BqrvOZLxCCHzxtd3SGU4kUgZ6PT4sRdLE7uxe4JgfxF2wpP4fW3//EJjh/thpHWOpFhJ64Cf9unoVCcswcpsIxRnAb2CzBKZ5ZjMGYPjKsNQ362gvktBg6DHOwOXezIr+Nj7FCzSC578ge1vbbiMBkX+DhZ9D9kzOCdJVZtiO0hVLiUrmOt8An6hgieW4e8oxufBZ+Bni0IwCupxE4yZcDQFbAfJ0XQjmHYVCsEaDtfdqC3NJ2Rm0RFQzzSJFw1ZgSb2RNNNlIuaBBMthUhs9oAdDGFr8SUhc+pXO2RvamEDnjEVzoF5lNUGbNg28W/I3v9+52smZD4ub2cGbAAAAABJRU5ErkJggg=="></m:MaterialImage>
             </m:MaterialTitle>
         </m:MaterialRow>
-        <m:MaterialRow>
+        <m:MaterialRow border="2 solid">
             <m:MaterialTitle grid="m9" backgroundColor="RED"></m:MaterialTitle>
         </m:MaterialRow>
         <m:MaterialFooter ui:field="footer" marginTop="470">
