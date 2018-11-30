@@ -21,6 +21,7 @@ package com.gwtmaterial.tutorial.client.application;
 
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.http.client.Header;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -33,17 +34,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
-
-
-    @UiField
-    MaterialHeader header;
-    @UiField
-    MaterialHeader header1;
-    @UiField
-    MaterialFooter footer;
-
-    @UiField
-    MaterialRow row;
 
     @Inject
     ApplicationView(Binder uiBinder) {
