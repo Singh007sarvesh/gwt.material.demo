@@ -7,7 +7,9 @@
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
+
        http://www.apache.org/licenses/LICENSE-2.0
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -16,71 +18,89 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:g='urn:import:com.google.gwt.user.client.ui'
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+        xmlns:g='urn:import:com.google.gwt.user.client.ui'
+        xmlns:m="urn:import:gwt.material.design.client.ui">
 
-    <ui:with field="res" type="com.gwtmaterial.tutorial.client.resources.AppResources"/>
+    <ui:with field="res" type="com.gwtmaterial.demo.client.resources.AppResources"/>
+
     <m:MaterialPanel>
-        <m:MaterialHeader >
-            <m:MaterialNavBar>
+        <m:MaterialHeader style="height:50px;">
+            <m:MaterialNavBar style="height:50px;">
                 <m:MaterialImage url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAYCAYAAAC7v6DJAAADpUlEQVR42u1YS2xNURR97VP1+vFpNW1CNEjRqGAiQlvq01Ri1OhAiVYkwoyBDhD/ComENNEBZvUZSsQvgqjfQCTMtKiRkKCpXyUS713rsI4c+51z331P0w7cneyc795n33X32XvfG4kEIM/zqiMhZUYAzwtRyAy4hd5vagnRSJMSicRzhRzagRCN9LxulPc3xUJUAlI8Hj9Or7vP9l6IShqJQicLsx9SauBWEK9WjpdyvD5EJ3WieAWOS0/E3PcQHX+vy6GXLed4AtvpnC8IqCcKzh8Ge/PBubo/0omiCx72hf0L9Lh+euS3oFdX7ZPem2J/DFyTSWyGnWfQjB7xqoAGzCZY72WyQLdZ1X8KUHA3xtMceqrAe9I4tyKTpETwTtPT96oSa6SAawQgr41xIcbP0M6iccoL+8DX0f2ogcW4N4DuLLbjwKtUGxQ8TJeA68FTXeD5nJsLngsud9nE/hzwFJftXK/0SxRvsaGUArsxvgq+yLW4AlAonWwAeEustWIuwf4RlWzAb8yqW4UFrm83580vGvS/esmUZfG8pGsL2ZcW2ZlGmPAIinl2wtQB3fstOjZKdNXhjwWYvZjbDN7k82brDKVFxvw6HfNgQLsEGHOdlMnlm60w6sqoCBtFep4vYdAHvDGUvc1xlfYezD01zogZYOXrryrGdU+EsUZjvCPphkDopsykfHMFaC+lKG1+8JA2P/BA2Zb4Ws3+DGG0zvrNQqaY85V+4JmebbnmHYbnbbBcc0XzdajC/hPiCpdIAG5YQOnTn2opwPvEQw77gedITjUO8JbRM+6CH2jG1B2e1e4Cj+WLogUWW/t5o2I+MVbRLtp+Snso4/82uXmtOtxy0AuFMtrLQT7lQFuGELyVBOagkhd8SP8mc4BX4APeBz5XKvD2iZq1HnKPNJBmbdfh+iWFtQN8kKjjIDPYZw8heIVcrxUyY6H3Gtp5Aa7tWZ+6UF/bNY6/SbXgRdh7Tqzn/bETbZmKLy7wVDxjf0BlV6GoxcicR8VaRuCBxutsamTaPMOmdzKgOxJGt1mzcu6hJWHEhf7Pxp5J1NFknLfaBG+Jw6OadCxD+0THQI57RMnRaZFv1Ydg/ZgPeHUiQchSZdBSSpQL8LokeJTtschWi1KlzVKKlBq38rxc/HVTzXopjSK3DMInYccV9He6vPYfCvViaRdrsa3gxRnomwhuUFfQ8jnoEfQoi/Aan0/HBv2ikyrs//AHiAYvJxLS8IL3E3OAO6MoX5/hAAAAAElFTkSuQmCC"></m:MaterialImage>
-                <m:MaterialNavBrand>
+                <m:MaterialNavBrand style="height:50px;">
                     <m:MaterialNavSection>
-                        <m:MaterialLink  text="Sarvesh" textColor="WHITE" marginLeft="1100"></m:MaterialLink>
-                        <m:MaterialLink  iconType="ARROW_DROP_DOWN" marginLeft="-40"></m:MaterialLink>
+                        <m:MaterialLink  text="Sarvesh" textColor="WHITE" marginLeft="1100" style="height:50px;"></m:MaterialLink>
+                        <m:MaterialLink  iconType="ARROW_DROP_DOWN" marginLeft="-40" style="height:50px;"></m:MaterialLink>
                     </m:MaterialNavSection>
                 </m:MaterialNavBrand>
             </m:MaterialNavBar>
         </m:MaterialHeader>
-        <m:MaterialHeader style="background-color:#e3e8f3;border-color:#92c1f0;height:30px;">
-            <m:MaterialNavBar style="background-color:#e3e8f3;border-color:#92c1f0;height:30px;" >
-               <m:MaterialNavBrand style="background-color:#e3e8f3;border-color:#92c1f0;height:30px;">
-                    <m:MaterialNavSection>
-                        <m:MaterialLink  text="File" marginTop="-15" textColor="BLACK" style="height:30px;"></m:MaterialLink>
-                        <m:MaterialLink  text="Edit" marginTop="-15" textColor="BLACK" style="height:30px;"></m:MaterialLink>
-                        <m:MaterialLink  text="Build" marginTop="-15" textColor="BLACK" style="height:30px;"></m:MaterialLink>
-                        <m:MaterialLink  text="Help" marginTop="-15" textColor="BLACK" style="height:30px;"></m:MaterialLink>
-                        <m:MaterialLink iconType="PLAY_ARROW" marginTop="-15"  iconColor="GREEN" style="height:30px;margin-left:600px;"></m:MaterialLink>
-                        <m:MaterialLink iconType="STOP"  marginTop="-15" iconColor="RED" style="height:30px;margin-left:-50px;"></m:MaterialLink>
+        <m:MaterialHeader style="background-color:#e3e8f3;border-color:#92c1f0;height:40px;">
+            <m:MaterialNavBar style="background-color:#e3e8f3;border-color:#92c1f0;height:40px;" >
+                    <m:MaterialNavSection style="height:40px;">
+                        <m:MaterialLink  fontSize="15px" height="20" text="File" fontWeight="NORMAL"  textColor="BLACK" style="height:40px;"></m:MaterialLink>
+                        <m:MaterialLink  text="Edit" marginTop="0" textColor="BLACK" style="height:40px;"></m:MaterialLink>
+                        <m:MaterialLink  text="Build"  textColor="BLACK" style="height:40px;"></m:MaterialLink>
+                        <m:MaterialLink  text="Help"  textColor="BLACK" style="height:40px;"></m:MaterialLink>
+                        <m:MaterialLink width="30px" iconType="PLAY_ARROW"   iconColor="GREEN" style="height:40px;margin-left:600px;"></m:MaterialLink>
+                        <m:MaterialLink iconType="STOP" iconColor="RED" style="height:40px;margin-left:0px;"></m:MaterialLink>
                     </m:MaterialNavSection>
-                </m:MaterialNavBrand>
+
             </m:MaterialNavBar>
         </m:MaterialHeader>
-            <m:MaterialRow grid="m12" style="height:20px;margin-top:10px;padding:0px;">
-                <m:MaterialRow grid="m9" style="height:0px;">
-                    <m:MaterialTitle grid="m2" style="border:1px solid #92c1f0;margin-left:-11px;background-color:#92c1f0;height:20px;">
-                        <m:MaterialLabel text="Project" textColor="BLACK" style="height:15px;"></m:MaterialLabel>
+        <m:MaterialContainer style="height:20px;margin-top:5px;">
+            <m:MaterialRow>
+                <m:MaterialTitle grid="m9">
+                    <m:MaterialTitle grid="m2" marginLeft="-11" style="height:20px;background-color:#92c1f0;">
+                        <m:MaterialLabel text="Project" textColor="BLACK" fontWeight="NORMAL" style="height:10px;"></m:MaterialLabel>
                     </m:MaterialTitle>
-                    <m:MaterialTitle grid="m10" style="margin-left:11px;" ></m:MaterialTitle>
-                </m:MaterialRow>
-                <m:MaterialRow grid="m3">
-                    <m:MaterialLink text="Rete"  padding="10"></m:MaterialLink>
-                    <m:MaterialLink text="Agenda"  padding="10"></m:MaterialLink>
-                    <m:MaterialLink text="User Guide"></m:MaterialLink>
-                </m:MaterialRow>
+                    <m:MaterialTitle grid="m10"  marginLeft="11"></m:MaterialTitle>
+                </m:MaterialTitle>
+                    <!--<m:MaterialTitle grid="m2"></m:MaterialTitle>-->
+                    <!--<m:MaterialTitle grid="m8" backgroundColor="BLACK"></m:MaterialTitle>-->
+                    <!--<m:MaterialTitle grid="m2" backgroundColor="RED"></m:MaterialTitle>-->
+                <m:MaterialTitle grid="m3">
+                    <m:MaterialTitle grid="m12"  marginLeft="-11">
+                        <m:MaterialTitle grid="m4" style="height:10px;">
+                            <m:MaterialLabel text="Rete" fontWeight="NORMAL" style="height:10px;"></m:MaterialLabel>
+                    </m:MaterialTitle>
+                        <m:MaterialTitle grid="m4" style="height:10px;">
+                            <m:MaterialLink backgroundColor="BLUE_LIGHTEN_5" text="Agenda" fontWeight="NORMAL" textColor="GREY" style="height:10px;"></m:MaterialLink>
+                        </m:MaterialTitle>
+                        <m:MaterialTitle grid="m4" style="height:10px;">
+                            <m:MaterialLabel text="User Guide" textColor="GREY" fontWeight="NORMAL" style="height:10px;"></m:MaterialLabel>
+                        </m:MaterialTitle>
+                    </m:MaterialTitle>
+                </m:MaterialTitle>
             </m:MaterialRow>
-        <m:MaterialContainer style="margin-top:-80px;">
+            <!--<m:MaterialLabel text="Project" textColor="BLACK" style="height:20px;width:165px;background-color:#92c1f0;"></m:MaterialLabel>-->
+            <!--<m:MaterialLink text="Rete" textColor="BLACK"  padding="5" marginLeft="1020" style="height:20px;width:165px;background-color:#92c1f0;margin-top:-50px;"></m:MaterialLink>-->
+            <!--<m:MaterialLink text="Agenda"  padding="5" textColor="GREY"></m:MaterialLink>-->
+            <!--<m:MaterialLink text="User Guide" textColor="GREY"></m:MaterialLink>-->
+
+        </m:MaterialContainer>
+        <m:MaterialContainer style="margin-top:0px;">
             <m:MaterialRow grid="m12">
-                <m:MaterialRow grid="m9">
+                <m:MaterialTitle grid="m9">
                     <m:MaterialTitle grid="m2" style="border:1px solid #92c1f0;margin-left:-11px;height:300px;" ></m:MaterialTitle>
                     <m:MaterialTitle grid="m10" style="border:1px solid #92c1f0;margin-left:11px;height:300px;" ></m:MaterialTitle>
                     <m:MaterialTitle marginTop="4" grid="m12" style="border:1px solid #92c1f0;margin-left:0px;height:30px;width:100% !important;">
-                        <m:MaterialLink text="Search Facts"   textColor="BLACK" padding="5"></m:MaterialLink>
-                        <m:MaterialLink text="Console" padding="5" textColor="GREY"></m:MaterialLink>
-                        <m:MaterialLink text="WM Contents" textColor="GREY" ></m:MaterialLink>
+                        <m:MaterialLink text="Console"   textColor="BLACK" padding="5"></m:MaterialLink>
+                        <m:MaterialLink backgroundColor="BLUE_LIGHTEN_5" text="WM Contents" padding="3" textColor="GREY"></m:MaterialLink>
+                        <m:MaterialLink backgroundColor="BLUE_LIGHTEN_5" text="Search Facts" padding="3" textColor="GREY" ></m:MaterialLink>
                     </m:MaterialTitle>
                     <m:MaterialTitle grid="m12" style="border:1px solid #92c1f0;margin-left:0px;height:30px;" width="100">
                         <m:MaterialImage float="RIGHT" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABfklEQVR42q2TS0sCURiG/TktK+0iWUSb6G+0qlVaoQsHJNOyoEILVy0KEgqCYDbhomXUD7BNi7KL6Yyj4yWdc2aEr3O+MbM45saBh1nMeZ/3nYFxOAZ5ybvD8B99BVexEaBmqwOhLTCIBQ1GRl7uL7ncHu0KtqDZpt604PFGgod+kvMtJ1BqgcEYWkxCw7CQGhNk7w9QkpGX4CLqFEvONl0/YRbizfHUHazG01Cum1CqUSQVcYkF10ez2MgFPFxtWFD55EFG1YRilSIn4TGx4PZ0AcM1DFqgs/D3gnl/ChSdIMehcbFATsxhmEv0ut2ssUa1QqFQppAvEyQpTYgFieAkNnOBhpN/L8iVKHIYdIsF+wE3fiwuUFmzwprzOoWPEoF3jcBr0WYv0EMQ80/ZzSzIJXk2u3vBi0qQHXZOKIiueVir2XnfnEY7zTyYVWwi6x6xYMPnAbU9mYff2uGsasCzYsBTwSbs6yEIeadBWpkByWsT/HPHZwx+bmB/8BeittcSJQTm9AAAAABJRU5ErkJggg=="></m:MaterialImage>
                         <m:MaterialImage float="RIGHT" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB4UlEQVR42qWT3UobQRiGvQdPBSn1IryA9shLEDyoJxJsKRZF/AmKNir+og1EI1ZKyMZ/hZJWqVClskpDUz1Ri6gBjVGIRmPMZndmX2e+2NW1TQu68CzvN9/sw+zsbF4oFMJjyJM3ZbjiQVgC35AD4bjxT+QD92tLMOqppMGDuJYTd181zSl59QEL6h7VlsDrfk3N6KmWk7rmtzTn4ooJDDhb228FEtmMJTI5qajp/wNLMP8pgM2jM5wL+11OznWLypoW+GZX4ZtTCVnbVrAW7MDSSDGxvuTFZZoR8aRO9Hn9iBynBRr2BbbPuDz+BqrvOZLxCCHzxtd3SGU4kUgZ6PT4sRdLE7uxe4JgfxF2wpP4fW3//EJjh/thpHWOpFhJ64Cf9unoVCcswcpsIxRnAb2CzBKZ5ZjMGYPjKsNQ362gvktBg6DHOwOXezIr+Nj7FCzSC578ge1vbbiMBkX+DhZ9D9kzOCdJVZtiO0hVLiUrmOt8An6hgieW4e8oxufBZ+Bni0IwCupxE4yZcDQFbAfJ0XQjmHYVCsEaDtfdqC3NJ2Rm0RFQzzSJFw1ZgSb2RNNNlIuaBBMthUhs9oAdDGFr8SUhc+pXO2RvamEDnjEVzoF5lNUGbNg28W/I3v9+52smZD4ub2cGbAAAAABJRU5ErkJggg=="></m:MaterialImage>
                     </m:MaterialTitle>
                     <m:MaterialTitle grid="m12" style="border:1px solid #92c1f0;margin-left:0px;height:140px;"></m:MaterialTitle>
-                </m:MaterialRow>
-                <m:MaterialRow grid="m3" style="border:1px solid #92c1f0;height:500px"></m:MaterialRow>
+                </m:MaterialTitle>
+                <m:MaterialRow grid="m3" style="border:1px solid #92c1f0;height:504px"></m:MaterialRow>
             </m:MaterialRow>
         </m:MaterialContainer>
-        <m:MaterialFooterCopyright>
-            <m:MaterialLabel text="Rules" marginLeft="-190"  style="font-weight:bold;"/>
-            <m:MaterialLabel text="© 2015 Copyright GWT Material" marginTop="-30" textAlign="CENTER"/>
+        <m:MaterialFooterCopyright style="height:40px;">
+            <m:MaterialLabel text="Rules" marginLeft="-190"  style="font-weight:bold;" marginTop="-20"/>
+            <m:MaterialLabel text="© 2015 Copyright GWT Material" marginTop="-20" textAlign="CENTER"/>
         </m:MaterialFooterCopyright>
     </m:MaterialPanel>
 </ui:UiBinder>
